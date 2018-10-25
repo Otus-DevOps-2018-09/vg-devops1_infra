@@ -31,6 +31,5 @@
             "script": "files/full_deploy.sh",
             "execute_command": "{{.Path}}"
         }
-
     ]
 }
