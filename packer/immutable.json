@@ -28,7 +28,7 @@
         },
         {
             "type": "shell",
-            "script": "scripts/deploy.sh",
+            "script": "files/full_deploy.sh",
             "execute_command": "{{.Path}}"
         }
 
