@@ -1,7 +1,9 @@
 # vg-devops1_infra
 vg-devops1 Infra repository 
 
-Task No: 3 The modern and secure way of connecting to the remote host behind bastion server is to use ProxyCommand. The working solution that I found for my IP addresses was ssh -o ProxyCommand='ssh -i ~/.ssh/appuser -W %h:%p appuser@35.210.209.239' appuser@10.132.0.3
+Task No: 3 
+
+The modern and secure way of connecting to the remote host behind bastion server is to use ProxyCommand. The working solution that I found for my IP addresses was ssh -o ProxyCommand='ssh -i ~/.ssh/appuser -W %h:%p appuser@35.210.209.239' appuser@10.132.0.3
 
 To connect via alias like ssh someinternalhost, I modified ~/.ssh/config file like
 
