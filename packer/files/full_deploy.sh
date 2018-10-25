@@ -9,7 +9,7 @@ the_path_to_script="/home/appuser/startpuma.sh"
 
 tee $the_path_to_script <<EOF
 #! /bin/bash
-cd $the_path_to_reddit
+cd /home/appuser/reddit/
 $the_path_to_puma -d
 EOF
 
