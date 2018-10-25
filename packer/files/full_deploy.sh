@@ -15,4 +15,18 @@ EOF
 
 sudo chmod +x $the_path_to_script
 
-/home/appuser/./startpuma.sh
+sudo tee /etc/systemd/system/mypuma.service <<EOF
+[Unit]
+Description=Puma Service
+Requires=network-online.target
+After=network-online.target
+
+[Service]
+User=appuser
+RemainAfterExit=yes
+ExecStart=$the_path_to_script
+
+[Install]
+WantedBy=multi-user.target
+EOF
+sudo systemctl enable mypuma.service
