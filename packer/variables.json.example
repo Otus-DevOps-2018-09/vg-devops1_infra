@@ -1,0 +1,4 @@
+{
+    "my_project_id": "infra-XXXXXX",
+    "my_source_image_family": "any_linux_family"
+}
